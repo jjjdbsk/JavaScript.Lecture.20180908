@@ -4,18 +4,64 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style type="text/css">
+    div.centered {text-align: center;}
+    label {
+        width: 100px;
+        margin-left: 20px;
+        display: inline-block;
+    }
+    input {margin-left: 20px;}
+    textarea {margin-left: 20px; margin-top: 3px;}
     </style>
 </head>
 <body>
-    <h1>��ǰ �ֹ���</h1>
-
-        <!-- ���� ���� -->
-
-        <!-- ����� ���� -->
-
-        <!-- �ֹ� ���� -->
-
-        <!-- �ֹ��ϱ� -->
-        <!-- �ٽ��ۼ� : form �Է� �� �ʱ�ȭ  -->
+    <h1>상품 주문서</h1>
+    <form action="" method="">
+        <fieldset>
+            <legend>개인정보</legend>
+            <div>
+                <label for="name"> 이름 </label>
+                <input type="text" name="name" id="name" placeholder="여백없이입력">
+            </div>
+            <div>
+                <label for="tel">연락처</label>
+                <input type="number" name="tel" id="tel" placeholder="연락가능한 번호">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <div>
+                <label for="ad">주소</label>
+                <input type="text" name="ad" id="ad" style="width: 300px;" required>
+            </div>
+            <div>
+                <label for="phone">전화번호</label>
+                <input type="number" name="phone" id="phone" required>
+            </div>
+            <div>
+                <label for="note" style="vertical-align: top;">메모</label>
+                <textarea name="note" id="note" cols="30" rows="5"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>주문정보</legend>
+            <div>
+                <input type="checkbox" name="a" id="a" checked>과테말라 안티구아(100g)
+                <input type="number" name="a" id="a" style="width: 30px;">개
+            </div>
+            <div>
+                <input type="checkbox" name="b" id="b">인도네시아 만엘링(100g)
+                <input type="number" name="b" id="b" style="width: 30px;">개
+            </div>
+            <div>
+                <input type="checkbox" name="c" id="c">탐라는도다(블렌딩)(100g)
+                <input type="number" name="c" id="c" style="width: 30px;">개
+            </div>
+        </fieldset>
+            <div class="centered">
+                <input type="submit" name="주문하기" id="주문하기" value="주문하기">
+                <input type="reset" name="다시작성" id="다시작성" value="다시작성">
+            </div>
+    </form>
 </body>
 </html>
