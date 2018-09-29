@@ -3,13 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS3 반응 선택자</title>
+    <style>
+        h1:hover {color: #ff0000;}
+
+        a:hover {color: #ff0000;}
+        a:visited {color: #ff97bf;}
+        a:link {color: #ff6600;}
+
+        input:focus {background-color: #fffb00;}
+
+        input[disabled] {background-color: gray;}
+        input:disabled {}
+        
+        input[checked] {outline: 1px solid gray;}
+        input:checked {}
+        
+    </style>
 </head>
 <body>
+    <pre>
+    h1에 마우스를 올렸을 때 텍스트 색깔을 red로 바꾸시오
+    </pre>
     <h1>반응 선택자</h1>
     <h1>반응 선택자</h1>
     <h1>반응 선택자</h1>
     <hr>
 
+    <pre>
+        a 태그에 hover, visited, link를 설정하시오
+        hover    : 폰트 색깔을 red 로
+        visited  : 폰트 색깔을 pink 로
+        link     : 폰트 색깔을 orange 로
+    </pre>
     <a href="http://www.naver.com" target="_blank">naver</a>
     <a href="http://daum.net"      target="_blank">daum</a>
     <a href="http://google.com"    target="_blank">google</a>
@@ -25,12 +50,12 @@
     <pre>
     input 태그에 disabled가 설정되면 배경색이 회색이 되도록 만드시오.
     </pre>
-    <input type="text" name="" disabled="disabled" />
+    <input type="text" name="" disabled= />
 
 
     <pre>
     input 태그에 checked가 설정되면 테두리를 만드시오
     </pre>
-    <input type="checkbox" name="" checked="checked" />
+    <input type="checkbox" name="" checked= />
 </body>
-</html>
+</html>

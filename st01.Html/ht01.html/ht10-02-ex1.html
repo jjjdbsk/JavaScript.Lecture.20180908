@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <title></title>
 <style>
-    * {border: 1px solid black; padding: 10px; margin-bottom: 10px;}
+    * { padding: 10px; margin-bottom: 5px;}
     html,body { height: 100%; }
-    header { height: 60px; }
-    nav { }
+    header { height: 30px; text-align: center; border: 1px solid black; }
+    nav { height: 30px; text-align: center; border: 1px solid black; }
 
     #wrapbody {overflow: auto; }
-    section {width: 46%; float: left; vertical-align: bottom; display: }
-    aside {width: 46%; height:100%; float: right; }
-    article {width: 80%; margin-left:auto; margin-right:auto;}
+    section {width: 120px; height:130px; float: left; vertical-align: bottom; border: 1px solid black; display: }
+    aside {width: 90px; height:130px; float: right; text-align: center; border: 1px solid black; }
+    article {width: 80%; margin-left:auto; margin-right:auto; text-align: center; border: 1px solid black;}
 
     .col-container {
         display: table; /* Make the container element behave like a table */
@@ -23,8 +23,33 @@
         display: table-cell; /* Make elements inside the container behave like table cells */
     }
 
-    footer {height: 30px; clear: both;}
+    footer {height: 30px; clear: both; text-align: center; border: 1px solid black;}
 </style>
 </head>
 <body>
+    <header>
+        Header
+    </header>
+    <nav>
+        Navigation
+    </nav>
+    <div>
+        <section>
+            Section
+            <div>
+                <article style="float: top">
+                    Article
+                </article>
+                <article style="float: bottom">
+                    Article
+                </article>
+            </div>
+        </section>
+        <aside>
+            Aside
+        </aside>
+    </div>
+    <footer>
+        Footer
+    </footer>
 </body>

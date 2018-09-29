@@ -5,12 +5,31 @@
     <title></title>
     <style>
         *       { border-radius: 10px;          }
-        header  { border: 1px dotted orange;    }
-        article { border: 1px dotted lightblue; }
-        aside   { border: 1px dotted violet;    }
-        footer  { border: 1px dotted pink;      }
+        header  { border: 1px dotted orange;   margin: 5px;}
+        nav     { text-align: center; border: 1px dotted orange;   margin: 20px;}
+        article { border: 1px dotted lightblue; margin: 5px; width: 200px; height: 100px; }
+        figure  { text-align: center; border: 1px dotted lightblue; margin: 10px; width: 60px; height: 30px;}
+        aside   { border: 1px dotted violet;  margin: 5px; width: 110px; height: 50px; }
+        footer  { border: 1px dotted pink;   margin: 5px; height: 40px; }
     </style>
 </head>
 <body>
+    <header> header
+        <nav>
+            nav
+        </nav>
+    </header>
+    <article style="float: left">
+        article
+        <figure>
+            figure
+        </figure>
+    </article>
+    <aside style="float: right">
+        aside
+    </aside>
+    <footer style="clear: both">
+        footer
+    </footer>
 </body>
 </html>

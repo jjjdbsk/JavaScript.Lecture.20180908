@@ -2,7 +2,21 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>���� ������: ��Ʈ������ ���̺� �����</title>
+    <title>스트라이트 테이블</title>
+    <style>
+        /* 상태선택자--> : 로 표기 */
+
+        /* 문제1. 홀수 tr을 찾고 배경색으로 lightpink를 설정하시오 */
+        tbody > tr:nth-child(odd) {background-color: lightpink;}
+
+        /* 문제1. 짝수 tr을 찾고 배경색으로 lightgray를 설정하시오 */
+        tbody > tr:nth-child(even) {background-color: lightgray;}
+
+        /* 반응선택자--> : 로 표기 */
+
+        /* 마우스 오버시 배경색으로 lightblue를 설정하시오. */
+        tbody > tr:hover {background-color: lightblue;}
+    </style>
 </head>
 <body>
     <table>
@@ -19,7 +33,7 @@
                 <td>2</td><td>T0002</td><td>Service</td><td>9999-9999</td><td>5</td>
             </tr>
             <tr>
-                <td>3</td><td>T0003</td><td>Design</td><td>9876-5432</td><td>11</td>
+                <td>3</td><td>T0003</td><td>Design</td><td>9876-5432</td><td>11</td>    
             </tr>
             <tr>
                 <td>4</td><td>T0004</td><td>App</td><td>0234-5678</td><td>7</td>
@@ -39,4 +53,4 @@
         </tbody>
     </table>
 </body>
-</html>
+</html>
