@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>text-overflow</title>
+    <style>
+        .a {
+            width: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+    
+            /* 버튼효과 */
+            border: 1px solid gray;
+            border-radius: 3px;
+            padding: 5px;
+            /* 안쪽 여백 */
+            }
+    
+        .a:hover {
+            overflow: visible;
+            }
+    </style>
 </head>
 <body>
     <h1>The text-overflow</h1>
