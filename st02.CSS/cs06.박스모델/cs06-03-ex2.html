@@ -3,6 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>display 속성</title>
+    <style>
+        ul > li {
+            list-style-type: none;
+            display: inline-block;
+            background: red;
+            padding: 10px;
+        }
+
+        ul > li:nth-child(odd) {background: red;}
+
+        ul> li:nth-child(even) {background: greenyellow;}
+
+        ul > li:first-child {border-radius: 10px 0px 0px 10px;}
+
+        ul > li:last-child {border-radius: 0px 10px 10px 0px;}
+    </style>
 </head>
 <body>
     <ul>
