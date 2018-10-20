@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>가변 레이아웃 B</title>
+    <style>
+        * {margin: 0px; padding: 0px;}
+        html,body {height: 100%; width: 100%;}
+        #leftbar {background-color: lightcoral; width: 40%; height: 100%;}
+        #header {background-color: lightgreen; width: 60%; height: 100px;}
+        #content {background-color: plum; width: 60%; min-height: calc( 100% - 100px - 100px);}
+        #footer {background-color: peru; width: 40%; height: 100%;}
+    </style>
 </head>
 
 <body>
@@ -27,4 +35,4 @@
     </div>
 </body>
 
-</html>
+</html>

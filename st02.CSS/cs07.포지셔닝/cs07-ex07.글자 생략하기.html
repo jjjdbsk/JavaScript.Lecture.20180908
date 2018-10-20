@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Ellipsis</title>
+    <style>
+        h1 {
+            width: 300px;
+            /* border: 1px dotted black; */
+            white-space: nowrap; /* 줄바꿈 안하게 */
+            overflow: hidden; /* 부모 영역을 벗어나는 자식들은 표시하지 않음 */
+            text-overflow: ellipsis; /* 축약기호 ... 가 출력되게 */
+        }
+        p {
+            width: 300px;
+            /* border: 1px dotted black; */
+            white-space: nowrap; /* 줄바꿈 안하게 */
+            overflow: hidden; /* 부모 영역을 벗어나는 자식들은 표시하지 않음 */
+            text-overflow: ellipsis; /* 축약기호 ... 가 출력되게 */
+        }
+    </style>
 </head>
+
 <body>
     <h1 class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
     <p class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </body>
-</html>
+
+</html>
