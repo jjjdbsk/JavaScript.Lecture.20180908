@@ -6,10 +6,15 @@
     <style>
         * {margin: 0px; padding: 0px;}
         html,body {height: 100%; width: 100%;}
-        #leftbar {background-color: lightcoral; width: 40%; height: 100%;}
-        #header {background-color: lightgreen; width: 60%; height: 100px;}
-        #content {background-color: plum; width: 60%; min-height: calc( 100% - 100px - 100px);}
-        #footer {background-color: peru; width: 40%; height: 100%;}
+        #leftbar {background-color: lightcoral; width: 20.8%; height: 100%; float: left;}
+        #wrap::after {
+            clear: both;
+            content: '';
+            display: block;
+        }
+        #header {background-color: lightgreen; width: 79.2%; height: 100px;}
+        #content {background-color: plum; width: 79.2%; min-height: calc( 100% - 100px - 100px);}
+        #footer {background-color: peru; width: 79.2%; height: 100%;}
     </style>
 </head>
 

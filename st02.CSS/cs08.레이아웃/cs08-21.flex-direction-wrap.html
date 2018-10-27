@@ -3,6 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        * {margin: 0px; padding: 0px;}
+        #dir-row {
+            width: 500px; 
+            height: 200px; 
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+        }
+        #dir-row > div {width: 100px; height: 100%; background-color: gray; border: 1px dotted black;}
+
+        #dir-col {
+            width: 500px; 
+            height: 200px; 
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+        #dir-col > div {width: 300px; height: 100%; background-color: gray; border: 1px dotted black;}
+
+        #wrap-row {
+            width: 500px; 
+            height: 500px; 
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #wrap-row > div {width: 200px; height: 200px; background-color: gray; border: 1px dotted black;}
+
+        #wrap-col {
+            width: 500px; 
+            height: 500px; 
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+        #wrap-col > div {width: 200px; height: 200px; background-color: gray; border: 1px dotted black;}
+    </style>
 </head>
 <body>
     <div id="dir-row">
@@ -36,4 +74,4 @@
     </div>
 
 </body>
-</html>
+</html>

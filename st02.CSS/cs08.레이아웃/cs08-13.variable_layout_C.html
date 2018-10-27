@@ -3,6 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>가변 레이아웃 C</title>
+    <style>
+        * {margin: 0px; padding: 0px;}
+        html,body {height: 100%; width: 100%;}
+        #wrap { height: 100%; width: 100%;}
+        #header {background-color: #bed372; height: 100px; width: 100%;}
+        #wrapbody {
+            width: 100%; 
+            height: calc(100% - 200px);
+            display: flex;
+            flex-direction: row; /* flex가 적용된 자식 태그의 정렬 방법 */
+            }
+        #leftbar {background-color: #d372b3; width: 200px; height: 100%;}
+        #content {background-color: #995bbd; width: 100%; height: 100%;}
+        #footer {background-color: #cc93ae; height: 100px; width: 100%;}
+    </style>
 </head>
 
 <body>
@@ -30,4 +45,4 @@
     </div>
 
 </body>
-</html>
+</html>
